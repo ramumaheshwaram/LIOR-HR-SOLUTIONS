@@ -71,3 +71,9 @@
   background-size: 40%;
   opacity: 0.5;
 }
+
+@media (max-width: 767px) {
+  .hero-img:before {
+    display: none;
+  }
+}
