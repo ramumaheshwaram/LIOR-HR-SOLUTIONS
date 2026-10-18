@@ -1,0 +1,63 @@
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+
+export const Footer = () => {
+  return (
+    <footer className="bg-[#007C7C] text-white">
+      <div className="mx-auto max-w-[1400px] px-6 pt-16 pb-12 sm:px-10 lg:px-16">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+          {/* Brand Column */}
+          <div>
+            <NavLink to="/">
+              <img src="/images/liora-hr-solutions.svg" alt="Liora HR Solutions" className="h-16 w-60 object-contain brightness-0 invert" />
+            </NavLink>
+          </div>
+
+          {/* Address Column */}
+          <div>
+            <h3 className="mb-4 text-2xl font-bold text-white">Address</h3>
+            <address className="not-italic leading-relaxed text-white text-lg">
+              <p>Hyderabad,Telangana</p>
+              <p>Lorem ipsum </p>
+              <p>India</p>
+            </address>
+          </div>
+
+          {/* Contact Column */}
+          <div>
+            <h3 className="mb-4 text-2xl font-bold text-white">Contact</h3>
+            <div className="space-y-2 text-white/95">
+              <p>
+                <span className="font-bold text-lg">Phone:</span>{' '}
+                <Link
+                  to="tel:+915555555555"
+                  className="underline underline-offset-2 transition-opacity hover:text-white/800"
+                >
+                  55555 55555
+                </Link>
+              </p>
+              <p>
+                <span className="font-bold">Email:</span>{' '}
+                <Link
+                  to="mailto:guntrupoojarani@gmail.com"
+                  className="underline underline-offset-2 transition-opacity hover:text-white/800"
+                >
+                  guntrupoojarani@gmail.com
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <hr className="my-12 border-t border-white/20" />
+
+        {/* Bottom Section */}
+        <div className="text-center text-lg sm:text-base text-white/95">
+          <span>LIORA HR SOLUTIONS © All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  )
+}

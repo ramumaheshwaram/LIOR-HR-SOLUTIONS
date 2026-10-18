@@ -1,0 +1,73 @@
+.hero-img {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-img:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  height: 500px;
+  background-image: url("/images/shape1+(1)+(1)+(1)-2880w.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+  background-position: top left;
+  opacity: 0.5;
+}
+
+.usp-img {
+  position: relative;
+  z-index: 10;
+}
+
+.usp-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/usp.webp");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 20px 200px 20px 20px;
+}
+
+.text-img {
+  position: relative !important;
+  z-index: 1;
+}
+
+.text-img:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 331px;
+  height: 327px;
+  background-image: url("/images/wq.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: right top !important;
+  background-size: 40%;
+  opacity: 0.5;
+}
+
+.text-img:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 331px;
+  height: 327px;
+  background-image: url("/images/qwqw+.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: left bottom !important;
+  background-size: 40%;
+  opacity: 0.5;
+}

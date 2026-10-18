@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jost';
+  src: url('./assets/fonts/Jost-400-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   Theme tokens (Tailwind v4)
+========================= */
+@theme {
+  /* Fonts */
+  --font-heading: "Barlow", sans-serif;
+  --font-paragraph: "Jost", sans-serif;
+
+  /* Colors */
+  --color-primary: #007C7C;
+  --color-secondary: #FFB300;
+  --color-accent: #F4673A;
+
+  --color-gold: #EEB52A;
+  --color-danger: #EE2A2A;
+
+  --color-text-primary: #111111;
+  --color-text-secondary: #007C7C;
+
+  --color-grey: #F9F9F9;
+  --color-grey-light: #F7F7F7;
+  --color-grey-dark: #b3b7c3;
+
+  --color-border: #EAEAEA;
+
+  --color-link: #051a53;
+  --color-link-hover: #de1e1b;
+  --color-link-active: #eeb52a;
+
+  /* Typography */
+  --text-body: 18px;
+  --leading-body: 1.588;
+  --leading-heading: 1.125;
+  --text-base: 16px;
+  --text-base1: 15px;
+  --text-lg: 18px;
+  --text-2xl: 24px;
+  --text-6xl: 60px;
+
+  /* Spacing */
+  --spacing-header: 110px;
+  --spacing-container: 1400px;
+
+  /* Breakpoints (Corrected for v4) */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Shadows */
+  --shadow-3xl: 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+  --animate-bounce-once: bounce-once 0.6s ease-out;
+
+  @keyframes bounce-once {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    30% {
+      transform: translateY(-14px);
+    }
+
+    60% {
+      transform: translateY(0);
+    }
+
+    80% {
+      transform: translateY(-6px);
+    }
+  }
+
+}
+
+/* =========================
+   Base styles
+========================= */
+@layer base {
+  :root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: var(--font-paragraph);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #fff;
+    font-family: var(--font-paragraph);
+  }
+
+  a {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-text-secondary);
+  }
+
+
+
+  /* =========================
+   Responsive Headings
+========================= */
+
+  h1 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4.688vw, 3.75rem);
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 2.688vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  h3 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(1.375rem, 1.4vw, 1.75rem);
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  h4 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: var(--font-paragraph);
+    background-color: var(--color-secondary);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--color-primary);
+  }
+
+  .button1 {
+    box-shadow: 0 0 0 2px #eaeaea inset;
+    padding: 0.75rem 1.5rem;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: var(--font-paragraph);
+    background-color: transparent;
+    color: var(--color-gold);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .button1:hover {
+    box-shadow: 0 0 0 2px var(--color-gold) inset;
+    background-color: var(--color-gold);
+    color: white;
+  }
+
+  .pad {
+    padding: 7% 4%;
+  }
+
+  .pad-bot {
+    padding: 0% 4% 7% 4%;
+  }
+
+}
