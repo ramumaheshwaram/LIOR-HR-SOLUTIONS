@@ -4,7 +4,7 @@ import "../../styles/Home.css";
 export const HeroSection = () => {
   return (
     <section className="hero-img w-full overflow-hidden bg-primary">
-      <div className="mx-auto flex min-h-[90vh] w-full items-center lg:gap-10 lg:pl-[4%] max-lg:flex-col-reverse">
+      <div className="mx-auto flex min-h-[90vh] w-full items-center lg:gap-10 lg:pl-[4%] max-lg:flex-col-reverse max-md:min-h-auto">
 
         {/* Left Content */}
         <div className="w-full px-[4%] py-[6%] lg:w-[46%] lg:px-0 lg:py-0">
