@@ -9,11 +9,11 @@ export const Header = () => {
 
   return (
     <header className="w-full bg-primary sticky top-0 z-50 shadow-xl">
-      <div className="mx-auto flex h-20 w-full max-w-[1400px] items-center justify-between px-4">
+      <div className="mx-auto flex h-35 w-full max-w-[1400px] items-center justify-between px-4">
         {/* Logo */}
         <div className='shrink-0 max-md:w-50'>
           <NavLink to="/">
-            <img src="/images/liora-hr-solutions.svg" alt="Liora HR Solutions" className="h-16 w-60 object-contain brightness-0 invert" />
+            <img src="/images/Liora-hr-solutions-logo.png" alt="Liora HR Solutions" className="h-30 w-80 object-contain" />
           </NavLink>
         </div>
         {/* Desktop Navigation */}
