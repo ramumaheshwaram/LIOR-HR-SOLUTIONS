@@ -5,6 +5,7 @@ export const Text_MediaSection1 = () => {
     <div className="w-full  bg-primary">
       <div className="max-w-[1400px] flex mx-auto gap-5 lg:gap-10 max-lg:flex-col-reverse md:gap-6 pad-bot">
         <div className="my-auto lg:w-1/2 ">
+        <span class="watermark">About Us</span>
           <h2 className="text-secondary">People Solutions Aligned to Growth</h2>
           <p className="mt-4 text-lg ">
             Growing companies often juggle multiple HR demands at once. Our
