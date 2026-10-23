@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Barlow';
-  src: url('./assets/fonts/Barlow-Regular.ttf') format('truetype');
+  font-family: "Barlow";
+  src: url("./assets/fonts/Barlow-Regular.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'jost';
-  src: url('./assets/fonts/Jost-400-Book.otf') format('opentype');
+  font-family: "jost";
+  src: url("./assets/fonts/Jost-400-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -25,21 +25,21 @@
   --font-paragraph: "Jost", sans-serif;
 
   /* Colors */
-  --color-primary: #f3eadb;
+  --color-primary: #f3ede2;
   --color-secondary: #1a1d22;
-  --color-accent: #F4673A;
+  --color-accent: #f4673a;
 
-  --color-gold: #EEB52A;
-  --color-danger: #EE2A2A;
+  --color-gold: #c49a50;
+  --color-danger: #ee2a2a;
 
   --color-text-primary: #111111;
-  --color-text-secondary: #007C7C;
+  --color-text-secondary: #fff;
 
-  --color-grey: #F9F9F9;
-  --color-grey-light: #F7F7F7;
+  --color-grey: #f3ede2;
+  --color-grey-light: #f7f7f7;
   --color-grey-dark: #b3b7c3;
 
-  --color-border: #EAEAEA;
+  --color-border: #eaeaea;
 
   --color-link: #051a53;
   --color-link-hover: #de1e1b;
@@ -73,7 +73,6 @@
   --animate-bounce-once: bounce-once 0.6s ease-out;
 
   @keyframes bounce-once {
-
     0%,
     100% {
       transform: translateY(0);
@@ -91,7 +90,6 @@
       transform: translateY(-6px);
     }
   }
-
 }
 
 /* =========================
@@ -127,8 +125,6 @@
     color: var(--color-text-secondary);
   }
 
-
-
   /* =========================
    Responsive Headings
 ========================= */
@@ -136,7 +132,7 @@
   h1 {
     color: var(--color-primary);
     font-family: var(--font-heading);
-    font-size: clamp(2rem, 4.688vw, 3.75rem);
+    font-size: clamp(2rem, 10.688vw, 5.75rem);
     line-height: 1.2;
     letter-spacing: 0;
   }
@@ -153,7 +149,7 @@
   h3 {
     color: var(--color-primary);
     font-family: var(--font-heading);
-    font-size: clamp(1.375rem, 1.4vw, 1.75rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem);
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -161,11 +157,10 @@
   h4 {
     color: var(--color-primary);
     font-family: var(--font-heading);
-    font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+    font-size: clamp(1.25rem, 1.1vw, 1.5rem);
     line-height: 1.5;
     letter-spacing: 0;
   }
-
 
   button {
     padding: 0.75rem 1.5rem;
@@ -176,7 +171,9 @@
     color: white;
     cursor: pointer;
     border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
 
   button:hover {
@@ -193,7 +190,9 @@
     color: var(--color-gold);
     cursor: pointer;
     border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
 
   .button1:hover {
@@ -209,5 +208,4 @@
   .pad-bot {
     padding: 0% 4% 7% 4%;
   }
-
 }
