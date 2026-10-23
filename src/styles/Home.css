@@ -162,11 +162,34 @@
 @media (max-width: 767px) {
   .intro-img:before {
     height: 20%;
-    top: 0;
+    top: -3%;
     left: 5%;
+    width: 60px;
   }
   .intro-img::after {
     height: 23%;
-    top: 0;
+    top: -3%;
+  }
+  .hero-img:before {
+    height: 27px;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro-img:before {
+    height: 20%;
+    top: -16%;
+    left: 5%;
+    width: 80px;
+  }
+  .intro-img::after {
+    height: 40%;
+    top: -16%;
+  }
+  .hero-img:before {
+    height: 100px;
+    background-size: contain;
+    background-position: 100% 100%;
   }
 }
