@@ -125,7 +125,7 @@
   }
 }
 .text-img {
-  position: relative !important;
+  position: relative;
   z-index: 1;
 }
 
@@ -139,7 +139,7 @@
   background-image: url("/images/wq.png");
   background-repeat: no-repeat;
   z-index: -1;
-  background-position: right top !important;
+  background-position: right top;
   background-size: 40%;
   opacity: 0.5;
 }
@@ -154,13 +154,19 @@
   background-image: url("/images/qwqw+.png");
   background-repeat: no-repeat;
   z-index: -1;
-  background-position: left bottom !important;
+  background-position: left bottom;
   background-size: 40%;
   opacity: 0.5;
 }
 
 @media (max-width: 767px) {
-  .hero-img:before {
-    display: none;
+  .intro-img:before {
+    height: 20%;
+    top: 0;
+    left: 5%;
+  }
+  .intro-img::after {
+    height: 23%;
+    top: 0;
   }
 }
