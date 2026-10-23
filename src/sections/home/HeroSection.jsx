@@ -4,7 +4,7 @@ import "../../styles/Home.css";
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative h-[90vh] w-full bg-[url('/images/Hero.jpg')] bg-cover bg-top bg-no-repeat max-md:h-[60vh] ">
+      <div className="relative h-[90vh] w-full bg-[url('/images/Hero.jpg')] bg-cover bg-top bg-no-repeat max-md:h-[60vh] hero-img ">
         <div className="absolute inset-0 flex items-center justify-center bg-black/60 px-4">
           <div className="mx-auto flex max-w-[1200px] flex-col items-center text-center">
             <h1 className="text-white font-bold">LIORA HR SOLUTIONS</h1>

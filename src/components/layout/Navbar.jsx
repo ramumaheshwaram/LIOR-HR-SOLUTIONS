@@ -1,14 +1,32 @@
 import "../../index.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll(); // Check initial scroll position
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
   return (
-    <header className="w-full bg-primary sticky top-0 z-50">
+    <header
+      className={`w-full bg-primary sticky top-0 z-50 transition-shadow duration-300 ${
+        scrolled ? "shadow-xl" : "shadow-none"
+      }`}
+    >
       <div className="mx-auto flex h-25 w-full max-w-[1400px] items-center justify-between px-4">
         {/* Logo */}
         <div className="shrink-0 max-md:w-50">
