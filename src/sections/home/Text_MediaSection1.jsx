@@ -5,7 +5,7 @@ export const Text_MediaSection1 = () => {
     <div className="w-full  bg-primary">
       <div className="max-w-[1400px] flex mx-auto gap-5 lg:gap-20 max-lg:flex-col-reverse md:gap-6 pad-bot">
         <div className="my-auto lg:w-1/2 relative ">
-          <span class="block watermark font-dm-sans max-sm:hidden">About Us</span>
+          <span class="block watermark font-dm-sans max-sm:hidden -top-14">About Us</span>
           <p className="text-xl text-black mb-3 font-bold relative z-5">MORE ABOUT LIORA</p>
           <h2 className="text-secondary relative z-10">People Solutions That Move Businesses Forward</h2>
           <p className="mt-4 text-lg ">

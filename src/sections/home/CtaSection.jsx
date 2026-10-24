@@ -8,8 +8,8 @@ export const CtaSection = () => {
       <div className='bg-secondary w-full flex max-sm:flex-col'>
         <div className='w-1/2 p-20 my-auto max-md:p-10 max-sm:w-full max-sm:p-5'>
           <h2 className="text-white">
-            Let’s build a stronger workforce and future-ready HR foundation together
           </h2>
+          Let’s unlock your growth with tailored HR and recruitment solutions today
 
           <p className="mt-6 text-white">Start your journey today.</p>
 
