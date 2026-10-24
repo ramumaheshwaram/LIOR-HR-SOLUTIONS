@@ -5,8 +5,8 @@ export const CtaSection = () => {
   return (
     <>
 
-      <div className='bg-secondary w-full h-auto flex '>
-        <div className='w-1/2 p-20'>
+      <div className='bg-secondary w-full flex max-sm:flex-col'>
+        <div className='w-1/2 p-20 my-auto max-md:p-10 max-sm:w-full max-sm:p-5'>
           <h2 className="text-white">
             Let’s build a stronger workforce and future-ready HR foundation together
           </h2>
@@ -23,8 +23,8 @@ export const CtaSection = () => {
             </Link>
           </div>
         </div>
-        <div className='w-1/2'>
-          <img src="/images/hr-handshaking.jpg" alt="hr-handshaking" className='w-full h-full' />
+        <div className='w-1/2 img-box max-sm:w-full'>
+          <img src="/images/hr-handshaking.jpg" alt="hr-handshaking" className='w-full h-full img-box-bg max-sm:h-60' />
         </div>
       </div>
     </>

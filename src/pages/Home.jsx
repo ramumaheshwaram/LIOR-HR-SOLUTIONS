@@ -1,3 +1,4 @@
+import { Header } from "../components/layout/Navbar";
 import { HeroSection } from "../sections/home/HeroSection";
 import { IntroSection } from "../sections/home/IntroSection";
 import { Text_MediaSection1 } from "../sections/home/Text_MediaSection1";
@@ -11,6 +12,7 @@ import { Footer } from "../components/layout/Footer";
 export const Home = () => {
   return (
     <main>
+      <Header />
       <HeroSection />
       <IntroSection />
       <Text_MediaSection1 />
