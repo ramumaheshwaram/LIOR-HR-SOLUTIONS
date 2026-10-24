@@ -2,6 +2,7 @@
   position: relative !important;
   z-index: 1;
 }
+
 .hero-img:before {
   content: "";
   position: absolute;
@@ -16,10 +17,12 @@
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
+
 .intro-img {
   position: relative !important;
   z-index: 1;
 }
+
 .intro-img::before {
   content: "";
   position: absolute;
@@ -34,6 +37,7 @@
   background-size: contain;
   background-position: 0% 0%;
 }
+
 .intro-img::after {
   content: "";
   position: absolute;
@@ -48,6 +52,7 @@
   background-size: contain;
   background-position: 100% 0%;
 }
+
 @keyframes animationFramesFive {
   0% {
     transform: translateY(0);
@@ -88,6 +93,7 @@
   pointer-events: none;
   border-radius: 20px 200px 20px 20px;
 }
+
 .usp_icon {
   position: absolute;
   right: 0;
@@ -127,6 +133,7 @@
     opacity: 0;
   }
 }
+
 .text-img {
   position: relative;
   z-index: 1;
@@ -161,6 +168,7 @@
   background-size: 40%;
   opacity: 0.5;
 }
+
 .watermark {
   font-size: 132px;
   position: relative;
@@ -175,15 +183,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.1) 35%,
-    transparent 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 35%,
+      transparent 100%);
   z-index: -1;
   pointer-events: none;
 }
+
 @media (max-width: 767px) {
   .intro-img:before {
     height: 20%;
@@ -191,11 +198,13 @@
     left: 5%;
     width: 60px;
   }
+
   .intro-img::after {
     height: 23%;
     top: -3%;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .intro-img:before {
     height: 20%;
@@ -203,6 +212,7 @@
     left: 5%;
     width: 80px;
   }
+
   .intro-img::after {
     height: 40%;
     top: -16%;
