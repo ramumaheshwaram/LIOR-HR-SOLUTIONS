@@ -33,10 +33,10 @@ export const Footer = () => {
               <p>
                 <span className="font-bold text-lg">Phone:</span>{" "}
                 <Link
-                  to="tel:+915555555555"
+                  to="tel:+917842639975"
                   className="underline underline-offset-2 transition-opacity hover:text-secondary hover:no-underline"
                 >
-                  55555 55555
+                  78426 39975
                 </Link>
               </p>
               <p>

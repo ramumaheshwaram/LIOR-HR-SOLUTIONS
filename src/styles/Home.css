@@ -170,7 +170,6 @@
 }
 
 .watermark {
-  font-size: 7.5vw;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -192,7 +191,6 @@
 }
 
 .watermark1 {
-  font-size: 6.5vw;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -210,8 +208,11 @@
       rgba(26, 29, 34, 0.8) 35%,
       transparent 100%);
   z-index: 1;
-  width: 80%;
+  width: 100%;
   pointer-events: none;
+  top: 10%;
+  bottom: 0;
+  height: 100%;
 }
 
 .img_shape {
@@ -279,6 +280,24 @@
   animation: animationFramesFive 10s infinite linear alternate;
 }
 
+.testimonial-eight__single::before {
+  position: absolute;
+  left: 40px;
+  bottom: -34px;
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.12) 0px 0px 30px);
+  border-style: solid;
+  border-width: 35px 20px 0px;
+  border-color: #1A1D22;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transition: 500ms;
+}
+
 @media (max-width: 767px) {
   .intro-img:before {
     height: 20%;
@@ -288,12 +307,22 @@
   }
 
   .intro-img::after {
-    height: 23%;
+    height: 20%;
     top: -3%;
   }
 
   .img-box-bg {
     position: relative;
+  }
+
+  .text-img:before {
+    background-size: 14%;
+
+  }
+
+  .text-img::after {
+    background-size: 14%;
+
   }
 }
 
@@ -306,7 +335,7 @@
   }
 
   .intro-img::after {
-    height: 40%;
+    height: 20%;
     top: -16%;
   }
 }

@@ -5,7 +5,7 @@ export const UspSection = () => {
     <div className="bg-secondary pad text-img w-full">
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center text-white mb-12">
-          <span class="block watermark1 font-dm-sans max-sm:hidden top-6 text-center left-0 w-full ">Our Approach</span>
+          <span class="block watermark1 font-dm-sans max-sm:hidden top-6 text-center left-0 w-full text-8xl -z-3">Our Approach</span>
           <h2 className="text-white relative z-3">A People-First Approach to Every Partnership</h2>
           <p className=" mt-2 text-lg">
             We believe better workforce decisions begin with understanding people, business goals, and the value of a strong professional relationship.

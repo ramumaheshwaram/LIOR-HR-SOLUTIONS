@@ -6,7 +6,7 @@ export const PodsSection = () => {
     <div className="w-full bg-primary">
       <div className="pad max-w-[1400px] mx-auto ">
         <div className="text-center  mb-12 relative">
-          <span class="block watermark font-dm-sans max-sm:hidden -top-16 text-center left-0 w-full ">Our Services</span>
+          <span class="block watermark font-dm-sans max-sm:hidden -top-16 text-center left-0 w-full text-8xl ">Our Services</span>
           <h2 className="text-secondary mt-o relative z-4">
             Our Services. Your Workforce Advantage.
           </h2>
@@ -28,7 +28,7 @@ export const PodsSection = () => {
               </p>
               <Link
                 to="/contact"
-                className=" inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
+                className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Recruitment →
               </Link>
@@ -46,7 +46,7 @@ export const PodsSection = () => {
                 Simplify payroll processing through organized coordination and reliable business-focused support.              </p>
               <Link
                 to="/contact"
-                className=" inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
+                className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Payroll →
               </Link>
@@ -65,7 +65,7 @@ export const PodsSection = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
+                className="inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Support →
               </Link>
@@ -84,7 +84,7 @@ export const PodsSection = () => {
               </p>
               <Link
                 to="/contact"
-                className=" inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black  mt-auto "
+                className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black  mt-auto "
               >
                 Explore HR Consulting →
               </Link>

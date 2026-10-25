@@ -8,16 +8,15 @@ export const CtaSection = () => {
       <div className='bg-secondary w-full flex max-sm:flex-col'>
         <div className='w-1/2 p-20 my-auto max-md:p-10 max-sm:w-full max-sm:p-5'>
           <h2 className="text-white">
+            Let’s unlock your growth with tailored HR and recruitment solutions today
           </h2>
-          Let’s unlock your growth with tailored HR and recruitment solutions today
-
           <p className="mt-6 text-white">Start your journey today.</p>
 
           {/* Centered buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-start gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-md bg-secondary px-7 py-3 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-black border-1"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-lg font-semibold text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white border-1"
             >
               Contact Us
             </Link>
