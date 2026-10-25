@@ -23,9 +23,8 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-full bg-primary sticky top-0 z-50 transition-shadow duration-300 ${
-        scrolled ? "shadow-xl" : "shadow-none"
-      }`}
+      className={`w-full bg-primary sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? "shadow-xl" : "shadow-none"
+        }`}
     >
       <div className="mx-auto flex h-25 w-full max-w-[1400px] items-center justify-between px-4">
         {/* Logo */}
@@ -46,8 +45,7 @@ export const Header = () => {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${
-                      isActive ? "underline" : "no-underline"
+                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${isActive ? "underline" : "no-underline"
                     }`
                   }
                 >
@@ -58,8 +56,7 @@ export const Header = () => {
                 <NavLink
                   to="/about-us"
                   className={({ isActive }) =>
-                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${
-                      isActive ? "underline" : "no-underline"
+                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${isActive ? "underline" : "no-underline"
                     }`
                   }
                 >
@@ -68,10 +65,20 @@ export const Header = () => {
               </li>
               <li>
                 <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${isActive ? "underline" : "no-underline"
+                    }`
+                  }
+                >
+                  Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${
-                      isActive ? "underline" : "no-underline"
+                    `text-secondary text-lg transition-all duration-500 hover:underline underline-offset-8 decoration-2 ${isActive ? "underline" : "no-underline"
                     }`
                   }
                 >
@@ -98,11 +105,10 @@ export const Header = () => {
           <nav
             id="mobile-navigation"
             aria-label="Mobile navigation"
-            className={`absolute left-0 right-0 top-20 z-50 w-full bg-primary border-t border-white/20 transition-all duration-500 ease-in lg:hidden ${
-              isMenuOpen
+            className={`absolute left-0 right-0 top-20 z-50 w-full bg-primary border-t border-white/20 transition-all duration-500 ease-in lg:hidden ${isMenuOpen
                 ? "translate-y-0 opacity-100 visible"
                 : "-translate-y-full opacity-0 invisible pointer-events-none"
-            }`}
+              }`}
             aria-hidden={!isMenuOpen}
             inert={!isMenuOpen ? "" : undefined}
           >
@@ -124,6 +130,15 @@ export const Header = () => {
                   className="block py-4 text-base text-secondary transition-colors duration-200 hover:text-gray-300"
                 >
                   About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  onClick={closeMenu}
+                  className="block py-4 text-base text-secondary transition-colors duration-200 hover:text-gray-300"
+                >
+                  Services
                 </NavLink>
               </li>
 
