@@ -4,11 +4,13 @@ import { IntroSection } from "../sections/aboutus/IntroSection";
 import { Text_MediaSection1 } from "../sections/aboutus/Text_MediaSection1";
 import { Text_MediaSection2 } from "../sections/aboutus/Text_MediaSection2";
 import { Text_MediaSection3 } from "../sections/aboutus/Text_MediaSection3";
-
 import { CtaSection } from "../sections/aboutus/CtaSection";
 import { Footer } from "../components/layout/Footer";
 import { Helmet } from "react-helmet-async";
+import { AnimatedSection } from "../components/Hooks/AnimatedSection";
+
 import "../styles/Home.css";
+
 
 export const AboutUs = () => {
   return (
@@ -29,12 +31,24 @@ export const AboutUs = () => {
       <main>
 
         <Header />
-        <HeroSection />
-        <IntroSection />
-        <Text_MediaSection1 />
-        <Text_MediaSection2 />
-        <Text_MediaSection3 />
-        <CtaSection />
+        <AnimatedSection>
+          <HeroSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <IntroSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text_MediaSection1 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text_MediaSection2 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text_MediaSection3 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <CtaSection />
+        </AnimatedSection>
         <Footer />
       </main>
     </>

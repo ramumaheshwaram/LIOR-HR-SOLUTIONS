@@ -10,9 +10,25 @@ import { Text_MediaSection5 } from "../sections/services/Text_MediaSection5";
 import { CtaSection } from "../sections/services/CtaSection";
 import { Footer } from "../components/layout/Footer";
 import { Helmet } from "react-helmet-async";
-
+import { AnimatedSection } from "../components/Hooks/AnimatedSection";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const Services = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 150);
+      }
+    }
+  }, [location]);
   return (
     <>
       <Helmet>
@@ -30,14 +46,37 @@ export const Services = () => {
       </Helmet>
       <main>
         <Header />
-        <HeroSection />
-        <IntroSection />
-        <Text_MediaSection1 />
-        <Text_MediaSection2 />
-        <Text_MediaSection3 />
-        <Text_MediaSection4 />
-        <Text_MediaSection5 />
-        <CtaSection />
+        <AnimatedSection>
+          <HeroSection />
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <IntroSection />
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <Text_MediaSection1 />
+        </AnimatedSection>
+
+        <AnimatedSection id="talent-acquisition" className="scroll-mt-35">
+          <Text_MediaSection2 />
+        </AnimatedSection>
+
+        <AnimatedSection id="payroll-management" className="scroll-mt-35">
+          <Text_MediaSection3 />
+        </AnimatedSection>
+
+        <AnimatedSection id="statutory-compliance" className="scroll-mt-35">
+          <Text_MediaSection4 />
+        </AnimatedSection>
+
+        <AnimatedSection id="hr-consulting" className="scroll-mt-35">
+          <Text_MediaSection5 />
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <CtaSection />
+        </AnimatedSection>
         <Footer />
       </main>
     </>

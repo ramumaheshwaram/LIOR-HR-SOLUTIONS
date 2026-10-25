@@ -23,7 +23,7 @@ export const UspSection = () => {
             <h3 className="text-2xl font-bold text-black mr-15">
               Finding the Right Fit
             </h3>
-            <p className="mt-2 text-black text-lg">
+            <p className="mt-2 text-black text-lg mr-15">
               Matching skilled candidates with the right workforce opportunities.            </p>
           </div>
           <div className="relative  rounded-3xl rounded-tr-[150px] bg-primary p-6 shadow-2xl transition-transform duration-300 hover:-translate-y-1 usp-img">
@@ -36,7 +36,7 @@ export const UspSection = () => {
             </div>
             <h3 className="text-2xl font-bold text-black mr-8">
               Improving HR Operations            </h3>
-            <p className="mt-2 text-black text-lg">
+            <p className="mt-2 text-black text-lg mr-8">
               Supporting structured payroll, documentation, and compliance processes.            </p>
           </div>
           <div className="relative o rounded-3xl rounded-tr-[150px] bg-primary p-6 shadow-2xl transition-transform duration-300 hover:-translate-y-1 usp-img">
@@ -49,7 +49,7 @@ export const UspSection = () => {
             </div>
             <h3 className="text-2xl font-bold text-black mr-8">
               Connecting Career Opportunities            </h3>
-            <p className="mt-2 text-black text-lg">
+            <p className="mt-2 text-black text-lg mr-8">
               Connecting professionals with careers that match their skills and ambitions.
             </p>
           </div>
@@ -64,8 +64,9 @@ export const UspSection = () => {
             <h3 className="text-2xl font-bold text-black mr-8">
               Empowering Job Seekers
             </h3>
-            <p className="mt-2 text-black text-lg">
-              Helping job seekers find suitable roles and grow professionally.            </p>
+            <p className="mt-2 text-black text-lg mr-8">
+              Helping job seekers find suitable roles and grow professionally.
+            </p>
           </div>
         </div>
       </div>

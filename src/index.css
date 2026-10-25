@@ -121,7 +121,7 @@
 
   body {
     margin: 0;
-    background-color: #fff;
+    background-color: var(--color-primary);
     font-family: var(--font-paragraph);
   }
 
@@ -154,6 +154,7 @@
     line-height: 1.2;
     letter-spacing: 0;
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   h3 {

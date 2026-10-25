@@ -5,12 +5,8 @@ export const IntroSection = () => {
     <div className="w-full  bg-primary intro-img">
       <div className="pt-16 max-w-[1400px] mx-auto pad">
         <img src="/images/intro.png" className="w-15 mx-auto" />
-        <span className="block text-xl text-center mx-auto mt-8 font-bold">CONNECTING TALENT. CREATING POSSIBILITIES.</span>
         <p className="text-2xl align-middle text-center mt-4 ">
-          We partner with forward-thinking organisations to source the right
-          talent, simplify payroll, navigate statutory requirements, and refine
-          HR processes, ensuring every people decision supports long-term growth
-          and a stronger workforce strategy.
+          Liora HR Solutions connects forward-thinking organisations with professionals who match their culture, skills, and ambitions, ensuring every hire accelerates productivity while supporting long-term strategic objectives.
         </p>
       </div>
     </div>

@@ -6,22 +6,25 @@ export const Text_MediaSection4 = () => {
       <div className="max-w-[1400px] mx-auto flex mx-auto gap-5 lg:gap-20 md:gap-6 max-lg:flex-col">
         <div className="lg:w-1/2 relative">
           <img
-            src="/images/successful-teamwork.jpg"
-            alt="Making Presentation"
+            src="/images/informal-colleagues.jpg"
+            alt="informal-colleagues"
             className="w-full h-auto rounded-lg shadow-lg"
           ></img>
           <img src="/images/working-together-office.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -right-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
         </div>
-        <div className="my-auto lg:w-1/2 relative">
-          <span class="block watermark1 font-dm-sans max-sm:hidden -top-14 text-7xl">Why Choose Us</span>
-          <h2 className="text-white font-bold relative z-5">Why Partner with LIORA HR</h2>
+        <div className="my-auto lg:w-1/2 relative" id="statutory-compliance">
+          <span class="block watermark1 font-dm-sans max-sm:hidden -top-14 text-5xl">Statutory Compliance</span>
+          <h2 className="text-white font-bold relative z-5">Stay Compliant. Move Forward with Confidence.</h2>
           <p className="mt-4 text-lg text-white relative z-5">
-            Managing people requires more than filling vacancies or processing payroll. It requires an understanding of your business, your workforce, and the processes that help your organization operate effectively.
+            Keeping up with employment regulations and statutory requirements can be challenging as your business grows. We help you navigate HR compliance with a structured, practical approach, supporting the documentation, processes, and compliance activities relevant to your organisation.
 
-            LIORA HR SOLUTIONS brings recruitment and HR support together to help businesses approach workforce challenges with greater clarity and confidence. From identifying suitable candidates to supporting payroll, compliance coordination, and HR processes, we focus on solutions that align with your operational needs.
-
-            For job seekers, we aim to make career connections more meaningful. For employers, we work to make talent acquisition and HR support more organized, practical, and people focused.
+            With a clearer view of your responsibilities and deadlines, you can manage your workforce more confidently while keeping compliance an important part of your business operations.
           </p>
+          <ul className="list-disc pl-5 space-y-2 mt-4 text-white text-lg">
+            <li>Support with applicable labour law requirements</li>
+            <li>Assistance with statutory records and documentation</li>
+            <li>Compliance tracking and deadline coordination</li>
+          </ul>
         </div>
       </div>
     </div>

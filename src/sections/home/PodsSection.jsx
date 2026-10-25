@@ -27,7 +27,7 @@ export const PodsSection = () => {
                 Find qualified candidates who match your roles, skills, and company culture.
               </p>
               <Link
-                to="/contact"
+                to="/services/#talent-acquisition"
                 className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Recruitment →
@@ -45,7 +45,7 @@ export const PodsSection = () => {
               <p className="text-white text-lg mt-3 mb-4">
                 Simplify payroll processing through organized coordination and reliable business-focused support.              </p>
               <Link
-                to="/contact"
+                to="/services/#payroll-management"
                 className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Payroll →
@@ -64,7 +64,7 @@ export const PodsSection = () => {
                 Manage employment compliance through structured documentation and regulatory support services.
               </p>
               <Link
-                to="/contact"
+                to="/services/#statutory-compliance"
                 className="inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black mt-auto"
               >
                 Explore Support →
@@ -83,7 +83,7 @@ export const PodsSection = () => {
                 Improve people management with practical guidance and streamlined HR processes.
               </p>
               <Link
-                to="/contact"
+                to="/services/#hr-consulting"
                 className=" inline-flex items-left justify-left rounded-md bg-primary px-7 py-3 text-lg font-semibold text-black transition-colors duration-300 hover:bg-white hover:text-black  mt-auto "
               >
                 Explore HR Consulting →

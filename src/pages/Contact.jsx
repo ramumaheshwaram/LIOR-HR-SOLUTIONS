@@ -4,6 +4,8 @@ import { HeroSection } from "../sections/contact/HeroSection";
 import { Text_MediaSection } from "../sections/contact/Text_MediaSection";
 import { Footer } from "../components/layout/Footer";
 import { Helmet } from "react-helmet-async";
+import { AnimatedSection } from "../components/Hooks/AnimatedSection";
+
 export const Contact = () => {
   return (
     <>
@@ -22,8 +24,12 @@ export const Contact = () => {
       </Helmet>
       <main>
         <Header />
-        <HeroSection />
-        <Text_MediaSection />
+        <AnimatedSection>
+          <HeroSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text_MediaSection />
+        </AnimatedSection>
         <Footer />
       </main>
     </>

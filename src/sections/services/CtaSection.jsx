@@ -8,9 +8,9 @@ export const CtaSection = () => {
       <div className='bg-secondary w-full flex max-sm:flex-col'>
         <div className='w-1/2 p-20 my-auto max-md:p-10 max-sm:w-full max-sm:p-5'>
           <h2 className="text-white">
-            Let’s unlock your growth with tailored HR and recruitment solutions today
+            Connect With Us To Build A Stronger, People-Driven Organisation Today
           </h2>
-          <p className="mt-6 text-white">Start your journey today.</p>
+          <p className="mt-6 text-white">Let's elevate your workforce.</p>
 
           {/* Centered buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-start gap-4">
