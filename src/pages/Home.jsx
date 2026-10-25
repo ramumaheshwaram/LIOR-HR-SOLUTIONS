@@ -8,10 +8,24 @@ import { Text_MediaSection2 } from "../sections/home/Text_MediaSection2";
 import { TestimonialSection } from "../sections/home/TestimonialSection";
 import { CtaSection } from "../sections/home/CtaSection";
 import { Footer } from "../components/layout/Footer";
+import { Helmet } from "react-helmet-async";
 
 export const Home = () => {
   return (
     <main>
+      <Helmet>
+        <title>LIORA HR SOLUTIONS | Talent Acquisition & HR Solutions</title>
+
+        <meta
+          name="description"
+          content="LIORA HR SOLUTIONS provides talent acquisition, payroll management, statutory compliance, and HR solutions for growing businesses."
+        />
+
+        <link
+          rel="canonical"
+          href="https://liora-hr-solutions.com/"
+        />
+      </Helmet>
       <Header />
       <HeroSection />
       <IntroSection />
