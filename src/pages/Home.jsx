@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet-async";
 
 export const Home = () => {
   return (
-    <main>
+    <>
       <Helmet>
         <title>LIORA HR SOLUTIONS | Talent Acquisition & HR Solutions</title>
 
@@ -26,16 +26,19 @@ export const Home = () => {
           href="https://liora-hr-solutions.com/"
         />
       </Helmet>
-      <Header />
-      <HeroSection />
-      <IntroSection />
-      <Text_MediaSection1 />
-      <UspSection />
-      <PodsSection />
-      <Text_MediaSection2 />
-      <TestimonialSection />
-      <CtaSection />
-      <Footer />
-    </main>
+      <main>
+        <Header />
+        <HeroSection />
+        <IntroSection />
+        <Text_MediaSection1 />
+        <UspSection />
+        <PodsSection />
+        <Text_MediaSection2 />
+        <TestimonialSection />
+        <CtaSection />
+        <Footer />
+      </main>
+    </>
+
   );
 };

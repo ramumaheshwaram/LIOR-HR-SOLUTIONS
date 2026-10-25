@@ -21,7 +21,6 @@ export const Footer = () => {
             <h3 className="mb-4 text-2xl font-bold text-secondary">Address</h3>
             <address className="not-italic leading-relaxed text-secondary text-lg">
               <p>Hyderabad,Telangana</p>
-              <p>Lorem ipsum </p>
               <p>India</p>
             </address>
           </div>

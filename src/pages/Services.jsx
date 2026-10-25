@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet-async";
 
 export const Services = () => {
   return (
-    <main>
+    <>
       <Helmet>
         <title>HR Services | LIORA HR SOLUTIONS</title>
 
@@ -28,16 +28,19 @@ export const Services = () => {
           href="https://yourdomain.com/services"
         />
       </Helmet>
-      <Header />
-      <HeroSection />
-      <IntroSection />
-      <Text_MediaSection1 />
-      <Text_MediaSection2 />
-      <Text_MediaSection3 />
-      <Text_MediaSection4 />
-      <Text_MediaSection5 />
-      <CtaSection />
-      <Footer />
-    </main>
+      <main>
+        <Header />
+        <HeroSection />
+        <IntroSection />
+        <Text_MediaSection1 />
+        <Text_MediaSection2 />
+        <Text_MediaSection3 />
+        <Text_MediaSection4 />
+        <Text_MediaSection5 />
+        <CtaSection />
+        <Footer />
+      </main>
+    </>
+
   )
 }

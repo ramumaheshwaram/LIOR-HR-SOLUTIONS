@@ -12,7 +12,7 @@ import "../styles/Home.css";
 
 export const AboutUs = () => {
   return (
-    <main>
+    <>
       <Helmet>
         <title>About Us | LIORA HR SOLUTIONS</title>
 
@@ -26,14 +26,18 @@ export const AboutUs = () => {
           href="https://yourdomain.com/about-us"
         />
       </Helmet>
-      <Header />
-      <HeroSection />
-      <IntroSection />
-      <Text_MediaSection1 />
-      <Text_MediaSection2 />
-      <Text_MediaSection3 />
-      <CtaSection />
-      <Footer />
-    </main>
+      <main>
+
+        <Header />
+        <HeroSection />
+        <IntroSection />
+        <Text_MediaSection1 />
+        <Text_MediaSection2 />
+        <Text_MediaSection3 />
+        <CtaSection />
+        <Footer />
+      </main>
+    </>
+
   )
 }
