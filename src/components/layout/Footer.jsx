@@ -44,7 +44,7 @@ export const Footer = () => {
                   to="mailto:guntrupoojarani@gmail.com"
                   className="underline underline-offset-2 transition-opacity hover:text-secondary hover:no-underline"
                 >
-                  guntrupoojarani@gmail.com
+                  info@liorasolutions.in
                 </Link>
               </p>
             </div>

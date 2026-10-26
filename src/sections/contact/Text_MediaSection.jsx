@@ -38,10 +38,10 @@ export const Text_MediaSection = () => {
           <div className="flex items-center gap-3">
             <FaEnvelope className="text-black text-xl shrink-0" />
             <Link
-              to="mailto:guntrupoojarani@gmail.com"
+              to="mailto:info@liorasolutions.in"
               className="underline underline-offset-2 transition-opacity hover:text-secondary hover:no-underline text-lg font-normal"
             >
-              guntrupoojarani@gmail.com
+              info@liorasolutions.in
             </Link>
           </div>
         </div>
