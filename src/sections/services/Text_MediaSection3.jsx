@@ -25,7 +25,7 @@ export const Text_MediaSection3 = () => {
             alt="payroll"
             className="w-full h-auto rounded-lg shadow-lg"
           ></img>
-          <img src="/images/talking-job-interview.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -left-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
+          <img src="/images/financial-adviser.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -left-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
 
         </div>
 

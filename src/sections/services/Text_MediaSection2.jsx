@@ -10,7 +10,7 @@ export const Text_MediaSection2 = () => {
             alt="Making Presentation"
             className="w-full h-auto rounded-lg shadow-lg"
           ></img>
-          <img src="/images/working-together-office.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -right-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
+          <img src="/images/social-network.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -right-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
         </div>
         <div className="my-auto lg:w-1/2 relative" id="talent-acquisition">
           <span class="block watermark1 font-dm-sans max-sm:hidden -top-14 text-6xl">Talent Acquisition</span>

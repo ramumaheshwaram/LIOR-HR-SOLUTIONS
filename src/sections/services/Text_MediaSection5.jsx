@@ -20,11 +20,11 @@ export const Text_MediaSection5 = () => {
         </div>
         <div className="lg:w-1/2 relative py-10">
           <img
-            src="/images/smiling-divers.jpg"
+            src="/images/people-meeting.jpg"
             alt="HR-Consulting"
             className="w-full h-auto rounded-lg shadow-lg"
           ></img>
-          <img src="/images/talking-job-interview.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -left-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
+          <img src="/images/concept-m.jpg" className="w-[45%] h-auto border-10 border-primary rounded-2xl absolute bottom-10 -left-10 text-media2 max-md:w-[30%] max-md:-left-5 max-sm:hidden"></img>
 
         </div>
 
